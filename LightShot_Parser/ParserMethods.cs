@@ -84,6 +84,7 @@ namespace LightShot_Parser
                                     Thread.Sleep(100);
                                     
                                     if(imgAmount == totalDownload + 1) Message.FinishingMessage();
+                                    totalDownload++;
 
                                 }
                                 catch (System.ArgumentException) // Обработчик исключений, если не удалось получить доступ к картинке
